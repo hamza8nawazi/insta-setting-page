@@ -77,6 +77,10 @@ body {
     
   
 }
+.sidebyside{
+    display: flex;
+    flex-direction: row;
+}
 
 .settings-section {
     background-color: #fff;
