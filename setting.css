@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: center;
+}
+
+.title{
+    display: flex;
+    text-align: left;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #fff;
+    border-right: 1px solid #dbdbdb;
+    padding-top: 20px;
+    
+}
+
+
+.sidebar li {
+    margin-bottom: 15px;
+     
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #262626;
+    font-size: 14px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center
+     
+}
+
+.sidebar a:hover {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.material-symbols-outlined{
+    color: grey;
+    padding-right: 10px;
+    display: inline-block;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border:1px solid #dbdbdb;
+    padding: 20px;
+    
+  
+}
+
+.settings-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.settings-section h2 {
+    margin-bottom: 20px;
+}
+
+ .form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+} 
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+.form-group button {
+    background-color: #3897f0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #3185d6;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
